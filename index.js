@@ -309,9 +309,22 @@ console.log(Math.abs(-4.5));
 
 // destructuring
 
-const {name } = {
+const { name } = {
   name: 'John',
-  age: 23
-}
+  age: 23,
+};
 
 console.log(name);
+
+// JSON
+
+let journal = {
+  squirrel: false,
+  event: ['work', 'touched tree', 'pizza', 'running'],
+};
+
+journal = JSON.stringify(journal, null, 3);
+console.log(journal);
+
+journal = JSON.parse(journal);
+console.log(journal);
