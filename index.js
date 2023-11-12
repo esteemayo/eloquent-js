@@ -361,3 +361,10 @@ const roseDragon = '🌹🐉';
 for (const char of roseDragon) {
   console.log(char);
 }
+
+const arr2 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.log(arr2.flat().reduce((a, b) => (a += b), 0));
