@@ -301,3 +301,8 @@ let words2 = ['never', 'fully'];
 words2 = ['will', ...words2, 'understand'];
 
 console.log(words2);
+
+console.log(Math.random());
+console.log(Math.floor(Math.random() * 10));
+console.log(Math.floor(4.9));
+console.log(Math.abs(-4.5));
