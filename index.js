@@ -329,3 +329,22 @@ console.log(journalStr);
 
 const journalPar = JSON.parse(journalStr);
 console.log(journalPar);
+
+// Higher Order Functions - functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
+
+function greaterThan(n) {
+  return (m) => m > n;
+}
+
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(11));
+console.log(greaterThan(2)(3));
+
+function noisy(f) {
+  return (...args) => {
+    console.log(args);
+    let result = f(...args);
+    return result;
+  };
+}
+console.log(noisy(Math.min)(3, 2, 1));
