@@ -348,3 +348,16 @@ function noisy(f) {
   };
 }
 console.log(noisy(Math.min)(3, 2, 1));
+
+const horseShoe = '🐴👟';
+
+console.log(horseShoe.length);
+console.log(horseShoe[0]);
+console.log(horseShoe.charCodeAt(0));
+console.log(horseShoe.codePointAt(0));
+
+const roseDragon = '🌹🐉';
+
+for (const char of roseDragon) {
+  console.log(char);
+}
