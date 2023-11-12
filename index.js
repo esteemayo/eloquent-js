@@ -267,11 +267,11 @@ console.log('one two three'.indexOf('ee'));
 console.log(' okay \n '.trim());
 
 const sentence = 'Secretarybirds specialize in stomping';
-let words = sentence.split(' ');
+const words = sentence.split(' ');
 console.log(words);
 
-words = words.join(' ');
-console.log(words);
+const wordStr = words.join(' ');
+console.log(wordStr);
 
 console.log('LA'.repeat(3));
 
@@ -309,22 +309,23 @@ console.log(Math.abs(-4.5));
 
 // destructuring
 
-const { name } = {
-  name: 'John',
+const { username, age } = {
+  username: 'John',
   age: 23,
 };
 
-console.log(name);
+console.log(username);
+console.log(age);
 
 // JSON
 
-let journal = {
+const journal = {
   squirrel: false,
   event: ['work', 'touched tree', 'pizza', 'running'],
 };
 
-journal = JSON.stringify(journal, null, 3);
-console.log(journal);
+const journalStr = JSON.stringify(journal, null, 3);
+console.log(journalStr);
 
-journal = JSON.parse(journal);
-console.log(journal);
+const journalPar = JSON.parse(journalStr);
+console.log(journalPar);
