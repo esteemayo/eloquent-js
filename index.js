@@ -296,3 +296,8 @@ console.log(maxNumber(4, 1, 9, -2));
 
 const num3 = [5, 1, 7];
 console.log(Math.max(...num3));
+
+let words2 = ['never', 'fully'];
+words2 = ['will', ...words2, 'understand'];
+
+console.log(words2);
