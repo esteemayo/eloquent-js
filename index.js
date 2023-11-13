@@ -391,7 +391,7 @@ console.log(Object.getPrototypeOf([]) == Array.prototype);
 
 const protoRabbit = {
   speak(line) {
-    console.log(`The ${this.type} says ${line}`);
+    console.log(`The ${this.type} rabbit says ${line}`);
   },
 };
 
@@ -412,3 +412,14 @@ console.log(Object.getPrototypeOf(user2));
 
 const newUser = Object.create(user2);
 console.log(Object.getPrototypeOf(newUser));
+
+function Rabbit(type) {
+  this.type = type;
+}
+
+Rabbit.prototype.speak = function (line) {
+  console.log(`The ${this.type} rabbit says ${line}`);
+};
+
+const weirdRabbit = new Rabbit('weird');
+weirdRabbit;
