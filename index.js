@@ -426,3 +426,21 @@ weirdRabbit;
 
 console.log(Object.getPrototypeOf(Rabbit) == Function.prototype);
 console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype);
+
+// classes
+
+class Rabbit2 {
+  constructor(type) {
+    this.type = type;
+  }
+
+  speak(line) {
+    console.log(`The ${this.type} rabbit says ${line}`);
+  }
+}
+
+const killerRabbit2 = new Rabbit2('killer');
+const blackRabbit = new Rabbit2('black');
+
+killerRabbit2.speak('hello');
+blackRabbit.speak('hi');
