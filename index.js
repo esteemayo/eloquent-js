@@ -444,3 +444,11 @@ const blackRabbit = new Rabbit2('black');
 
 killerRabbit2.speak('hello');
 blackRabbit.speak('hi');
+
+const obj = new (class {
+  getWord() {
+    return 'hello';
+  }
+})();
+
+console.log(obj.getWord());
