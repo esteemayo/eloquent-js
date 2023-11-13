@@ -452,3 +452,10 @@ const obj = new (class {
 })();
 
 console.log(obj.getWord());
+
+// overriding derived properties
+killerRabbit.teeth = 'small';
+console.log(killerRabbit.teeth);
+
+killerRabbit.teeth = 'long, sharp, and bloody';
+console.log(killerRabbit.teeth);
