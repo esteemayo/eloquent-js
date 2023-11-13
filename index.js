@@ -423,3 +423,6 @@ Rabbit.prototype.speak = function (line) {
 
 const weirdRabbit = new Rabbit('weird');
 weirdRabbit;
+
+console.log(Object.getPrototypeOf(Rabbit) == Function.prototype);
+console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype);
