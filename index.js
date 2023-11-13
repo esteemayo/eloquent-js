@@ -409,3 +409,6 @@ const user2 = {
 };
 
 console.log(Object.getPrototypeOf(user2));
+
+const newUser = Object.create(user2);
+console.log(Object.getPrototypeOf(newUser));
