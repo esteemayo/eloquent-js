@@ -368,3 +368,33 @@ const arr2 = [
   [7, 8, 9],
 ];
 console.log(arr2.flat().reduce((a, b) => (a += b), 0));
+
+function normalize() {
+  console.log(this.coords.map((n) => n / this.length));
+}
+
+normalize.call({ coords: [0, 2, 3], length: 5 });
+
+// prototype
+
+const empty = {};
+console.log(empty.toString);
+console.log(empty.toString());
+
+console.log(Object.getPrototypeOf({}) == Object.prototype);
+console.log(Object.getPrototypeOf(Object.prototype));
+
+console.log(Object.getPrototypeOf(Math.max) == Function.prototype);
+console.log(Object.getPrototypeOf([]) == Array.prototype);
+
+// you can use Object.create to create an object with a specific prototype
+
+const protoRabbit = {
+  speak(line) {
+    console.log(`The ${this.type} says ${line}`);
+  },
+};
+
+const killerRabbit = Object.create(protoRabbit);
+killerRabbit.type = 'killer';
+killerRabbit.speak('SKREEEE!');
