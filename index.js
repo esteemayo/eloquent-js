@@ -398,3 +398,14 @@ const protoRabbit = {
 const killerRabbit = Object.create(protoRabbit);
 killerRabbit.type = 'killer';
 killerRabbit.speak('SKREEEE!');
+
+console.log(Object.getPrototypeOf(killerRabbit));
+
+const user2 = {
+  name: 'John',
+  walk() {
+    console.log(`${this.name} is walking`);
+  },
+};
+
+console.log(Object.getPrototypeOf(user2));
