@@ -459,3 +459,29 @@ console.log(killerRabbit.teeth);
 
 killerRabbit.teeth = 'long, sharp, and bloody';
 console.log(killerRabbit.teeth);
+
+// map
+
+const ages = {
+  Boris: 39,
+  Liang: 22,
+  Júlia: 62,
+};
+
+console.log(ages['Júlia']);
+console.log(`Is Jack's age known?`, 'jack' in ages);
+console.log(`Is toString's age known?`, 'toString' in ages);
+
+console.log('toString' in Object.create(null));
+
+const ages2 = new Map();
+
+ages2.set('Boris', 30);
+ages2.set('Liang', 22);
+ages2.set('Julia', 62);
+
+console.log(ages2.has('Boris'));
+console.log(`Julia is ${ages2.get('Julia')}`);
+console.log(ages2.has('toString'));
+
+console.log(ages.Boris);
