@@ -483,6 +483,7 @@ ages2.set('Julia', 62);
 console.log(ages2.has('Boris'));
 console.log(`Julia is ${ages2.get('Julia')}`);
 console.log(`Is Jack's age known?`, ages2.has('jack'));
+console.log(`Is Jack's age known?`, ages2.hasOwnProperty('jack'));
 console.log(ages2.has('toString'));
 
 console.log(ages.Boris);
