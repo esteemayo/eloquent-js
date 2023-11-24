@@ -549,3 +549,7 @@ console.log(temp.celsius);
 
 const fah = Temperature.fromFahrenheit(30);
 console.log(fah);
+
+// instanceof
+
+console.log([] instanceof Array);
