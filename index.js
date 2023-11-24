@@ -553,3 +553,9 @@ console.log(fah);
 // instanceof
 
 console.log([] instanceof Array);
+
+// persistent data
+const obj2 = Object.freeze({ value: 5 });
+
+obj2.value = 10;
+console.log(obj2.value);
