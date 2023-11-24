@@ -511,3 +511,14 @@ const okIterator = 'OK'[Symbol.iterator]();
 console.log(okIterator.next());
 console.log(okIterator.next());
 console.log(okIterator.next());
+
+// getters, setters and statics
+
+const varyingSize = {
+  get size() {
+    return Math.floor(Math.random() * 100);
+  },
+};
+
+console.log(varyingSize.size);
+console.log(varyingSize.size);
