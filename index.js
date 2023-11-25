@@ -559,3 +559,10 @@ const obj2 = Object.freeze({ value: 5 });
 
 obj2.value = 10;
 console.log(obj2.value);
+
+// regular expressions
+const regEx1 = new RegExp('abc');
+console.log(regEx1);
+
+const regEx2 = /abc/;
+console.log(regEx2);
