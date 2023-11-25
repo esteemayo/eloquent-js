@@ -591,3 +591,9 @@ console.log(neighbor.test('neighbor'));
 const dateTime2 = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}:\d{1,2}/;
 console.log(dateTime2.test('25-11-2023 11:25'));
 console.log(dateTime2.test('25-Nov-2023 11:25'));
+
+// the replace method
+
+console.log('papa'.replace('p', 'm'));
+console.log('Borobudur'.replace(/[ou]/, 'a'));
+console.log('Borobudur'.replace(/[ou]/g, 'a'));
