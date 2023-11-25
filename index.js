@@ -566,3 +566,6 @@ console.log(regEx1);
 
 const regEx2 = /abc/;
 console.log(regEx2);
+
+const eighteenPlus = /eighteen\+/;
+console.log(eighteenPlus);
