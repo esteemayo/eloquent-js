@@ -579,3 +579,6 @@ console.log(/abc/.test('abxde'));
 
 console.log(/[0123456789]/.test('1992'));
 console.log(/[0-9]/.test('1992'));
+
+const dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
+console.log(dateTime.test('25-11-2023 11:25'));
