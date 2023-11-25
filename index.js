@@ -574,3 +574,8 @@ console.log(eighteenPlus);
 
 console.log(/abc/.test('abcde'));
 console.log(/abc/.test('abxde'));
+
+// set of characters
+
+console.log(/[0123456789]/.test('1992'));
+console.log(/[0-9]/.test('1992'));
