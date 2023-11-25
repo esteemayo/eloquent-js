@@ -582,3 +582,4 @@ console.log(/[0-9]/.test('1992'));
 
 const dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
 console.log(dateTime.test('25-11-2023 11:25'));
+console.log(dateTime.test('25-Nov-2023 11:25'));
