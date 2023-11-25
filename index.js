@@ -587,3 +587,7 @@ console.log(dateTime.test('25-Nov-2023 11:25'));
 const neighbor = /neighbou?r/;
 console.log(neighbor.test('neighbour'));
 console.log(neighbor.test('neighbor'));
+
+const dateTime2 = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}:\d{1,2}/;
+console.log(dateTime2.test('25-11-2023 11:25'));
+console.log(dateTime2.test('25-Nov-2023 11:25'));
