@@ -569,3 +569,8 @@ console.log(regEx2);
 
 const eighteenPlus = /eighteen\+/;
 console.log(eighteenPlus);
+
+// testing for matches
+
+console.log(/abc/.test('abcde'));
+console.log(/abc/.test('abxde'));
